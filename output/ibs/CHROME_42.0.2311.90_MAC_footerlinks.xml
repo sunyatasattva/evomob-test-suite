@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="footerlinks"
+             errors="0"
+             failures="0"
+             tests="14">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Footer pages" package="footerlinks" skipped="0"
+    tests="14" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;.x-home&gt; was visible after 1363 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-home&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#headFaq&gt; was present after 16 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-staticPageA&gt; was visible after 1537 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-staticPageA&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.degliOrdini:first-child&gt; was present after 18 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.r-aiutolinks&gt; was visible after 30 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-staticPageB&gt; was visible after 241 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-staticPageB&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.footerLinks&gt; was visible after 990 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-contactUsRemix&gt; was visible after 888 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-contactUsRemix&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-staticPageB&gt; was visible after 210 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-staticPageB&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

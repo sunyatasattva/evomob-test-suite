@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="login"
+             errors="0"
+             failures="0"
+             tests="10">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Login pages" package="login" skipped="0"
+    tests="10" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;.x-home&gt; was visible after 90 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-home&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.userDiv&gt; was visible after 66 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#dialogPage&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-loginPageRemix&gt; was visible after 34 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-loginPageRemix&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.userDiv&gt; was visible after 59 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#dialogPage&gt; was visible after 45 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.x-registrationRemix&gt; was visible after 82 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-registrationRemix&quot;.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;.r-promosliderd&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

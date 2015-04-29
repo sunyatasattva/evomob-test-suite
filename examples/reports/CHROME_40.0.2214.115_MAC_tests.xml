@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="tests"
+             errors="1"
+             failures="1"
+             tests="4">
+  
+  <testsuite errors="1" failures="1" hostname="" id=""
+    name="Demo test Google" package="tests" skipped="1"
+    tests="4" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 66 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;button[name=btnG]&gt; was visible after 37 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#main&gt; contains text: &quot;The Night Watch&quot;.">
+        
+          <failure message="Expected &quot;The Night Watch&quot; but got: &quot;Google.se på: English
+Okänd - Använd exakt plats
+Inställningar
+Använd Google.com
+Sekretess Villkor
+Annonsering Företagslösningar Om&quot;"></failure>
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;input[type=text]&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

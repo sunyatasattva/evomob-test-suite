@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="login"
+             errors="0"
+             failures="1"
+             tests="14">
+  
+  <testsuite errors="0" failures="1" hostname="" id=""
+    name="Login pages" package="login" skipped="10"
+    tests="14" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;.x-home&gt; was visible after 36 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-home&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.userDiv&gt; was visible after 103 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Timed out while waiting for element &lt;#dialogPage&gt; to be visible for 5000 milliseconds.">
+        
+          <failure message="Expected &quot;visible&quot; but got: &quot;not visible&quot;"></failure>
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

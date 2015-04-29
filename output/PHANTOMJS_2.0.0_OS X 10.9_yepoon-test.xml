@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="yepoon-test"
+             errors="0"
+             failures="0"
+             tests="16">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Homepage gets Remixed" package="yepoon-test" skipped="0"
+    tests="1" time="" timestamp="">
+    
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-home&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Home To Checkout Test" package="yepoon-test" skipped="0"
+    tests="15" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;.ui-listview&gt; was visible after 30 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-category&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.productlist&gt; was visible after 28 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-subcategory&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#nxt-results-area&gt; was visible after 31 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.bot_carrelloInternas a&gt; was visible after 31 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-cartOverview&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.greenSubmitBtn&gt; was visible after 116 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;html&gt; has css class: &quot;x-loginpage&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.logon&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#dati_conferma&gt; was present after 17 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.descricaoProdutosLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#pagamento&gt; was present after 13 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.secondLevelContent .radioBtnLabel&gt; is present.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#ButtonInvioForm&gt; is present.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Search Result Test" package="yepoon-test" skipped="0"
+    tests="0" time="" timestamp="">
+    
+    
+    
+    </testsuite>
+  
+</testsuites>

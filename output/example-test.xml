@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="example-test"
+             errors="0"
+             failures="0"
+             tests="3">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Homepage gets Remixed" package="example-test" skipped="3"
+    tests="3" time="" timestamp="">
+    
+    
+    
+      <system-err>
+        pause is not defined
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>
