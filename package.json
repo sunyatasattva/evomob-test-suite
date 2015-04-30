@@ -1,0 +1,24 @@
+{
+  "name": "evomob-test-suite",
+  "version": "2.0.0",
+  "description": "Evomob configuration of Nightwatch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunyatasattva/evomob-test-suite"
+  },
+  "author": "M. L. Giannotta",
+  "bugs": {
+    "url": "https://github.com/sunyatasattva/evomob-test-suite/issues"
+  },
+  "devDependencies": {
+    "nightwatch": "^0.6.0",
+    "phantomjs": "^1.9.8"
+  },
+  "homepage": "https://github.com/sunyatasattva/evomob-test-suite",
+  "dependencies": {
+    "async": "^0.2.10",
+    "chalk": "^0.4.0",
+    "traverse": "~0.6.6",
+    "extend": "~2.0.1"
+  }
+}
