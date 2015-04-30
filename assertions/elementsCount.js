@@ -1,3 +1,11 @@
+/*
+ * Tests if the number of elements resulting of a given selector is exactly as expected.
+ *
+ * @param  {string}  selector  The CSS selector for a given elements collection.
+ * @param  {number}  expected  The expected number of elements in that collection.
+ * @param  {string}  [msg]     Message to display in the console.
+ */
+
 var util = require('util');
 exports.assertion = function(selector, expected, msg) {
 

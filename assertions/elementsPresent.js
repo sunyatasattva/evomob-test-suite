@@ -1,3 +1,20 @@
+/*
+ * Tests if the DOM contains a set of elements given by selectors.
+ *
+ * The selectors can be provided in an array or as separate string arguments.
+ * @example
+ *     // Both these examples are valid uses of this assertion
+ *     client.elementsPresent('body', '#element-id', 'li.some-class');
+ *     client.elementsPresent( ['body', '#element-id', 'li.some-class'] )
+ *
+ * Note that for selectors returning a collection, it is sufficient for one
+ * to be present for the assertion to pass.
+ *
+ * @param  {string/array}  {...selectors}  An array of selectors, or an indefinite number of
+ *                                         selector strings.
+ * @param  {function}      [callback]      Callback to call after the assertion has run.
+ */
+
 var async = require('async'),
     util = require('util'),
     events = require('events');

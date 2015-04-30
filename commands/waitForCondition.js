@@ -1,3 +1,11 @@
+/*
+ * Waits until a given condition is satisfied.
+ *
+ * @see  https://github.com/mobify/nightwatch-commands/
+ *
+ * @todo Document this command further.
+ */
+
 var util = require('util'),
     events = require('events');
 

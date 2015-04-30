@@ -1,3 +1,12 @@
+/*
+ * Utility command to log a message to the console.
+ *
+ * @param  {string}    message    The CSS selector for a given elements collection.
+ * @param  {string}    type       {'info'|'warning'}
+ * @param  {function}  [callback] Callback to call after message has been logged.
+ * @return client
+ */
+
 var chalk = require('chalk');
 
 exports.command = function(message, type, callback) {
@@ -11,7 +20,7 @@ exports.command = function(message, type, callback) {
                 console.log( chalk.cyan( "%s  %s"), INFO_SYMBOL, message );
                 break;
             case "warning" :
-                console.log( chalk.cyan( "%s  %s"), WARN_SYMBOL, message );
+                console.log( chalk.red( "%s  %s"), WARN_SYMBOL, message );
                 break;
             default :
                 console.log(message);
