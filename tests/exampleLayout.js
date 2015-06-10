@@ -8,6 +8,13 @@ module.exports = {
      */
     before: function(client){
         thisPage = client.page.exampleLayout();
+        thisPage.visitPage();
+    },
+    /*
+     * This makes sure that the session is closed when all steps are done.
+     */
+    after: function(client){
+        client.end();  
     },
     
     /*
@@ -22,9 +29,6 @@ module.exports = {
      */
     "It gets Remixed correctly": function(client){
         client
-            // These two lines take care of a big part of this test and
-            // should always be present.
-            .page.exampleLayout().visitPage()
             .page.exampleLayout().expectedElementsPresent()
             // I'm verifying that the slider links actually have some URL
             // in them, since I am getting the URL as a separate element
@@ -32,7 +36,7 @@ module.exports = {
             .verify.attributeContains(thisPage.selectors.slider.links, "href", "http://shop.wki.it/")
             // Here I am verifying that the main menu elements are at least 7
             .verify.elementsCountAtLeast(thisPage.selectors.mainMenuNavElements, 7)
-        .end();
+        // No real need to end the session here, we are falling through instead.
     },
     
     /*
@@ -42,8 +46,33 @@ module.exports = {
      * of functionality to test would be add to cart, show collapsible, expand
      * description and so forth.
      *
-     * Please organise this section in alphabetical order.
+     * Please organise this section in alphabetical order. Organise the steps
+     * that are not falling through in a separate group.
      */
+    
+    /*
+     * Testing things atomically. Here I am just testing whether the search input
+     * correctly shows or not.
+     */
+    "Search input shows correctly": function(client){
+        client
+            .verify.hidden(thisPage.selectors.search.searchInput, "searchInput should initially be hidden")
+            .page.exampleLayout().openSearch()
+            .verify.visible(thisPage.selectors.search.searchInput, "searchInput should now be visible")
+    },
+    /*
+     * Checking if the slider correctly moves by checking slides visibility after
+     * calling the page object API.
+     */
+    "Slider correctly moves": function(client) {
+        client
+            .verify.hidden( thisPage.getSlideCss(3) )
+            .page.exampleLayout().moveToSlide(3)
+            .pause(1000)
+            .verify.visible( thisPage.getSlideCss(3) )
+    },
+    
+    // Step below not falling-through
     
     /*
      * Testing the search functionality
@@ -57,7 +86,6 @@ module.exports = {
         var query = "test";
         
         client
-            .page.exampleLayout().visitPage()
             .page.exampleLayout().searchFor(query)
             // You will notice that the next three lines contain hardcoded selectors.
             // This should never happen in a real project: those selectors would come
@@ -68,31 +96,6 @@ module.exports = {
             .waitForElementVisible(".x-searchResults", 11000)
             .assert.urlContains("risultatoricerca")
             .verify.containsText(".search-keyword", query)
-        .end();
-    },
-    /*
-     * Testing things atomically. Here I am just testing whether the search input
-     * correctly shows or not.
-     */
-    "Search input shows correctly": function(client){
-        client
-            .page.exampleLayout().visitPage()
-            .verify.hidden(thisPage.selectors.search.searchInput, "searchInput should initially be hidden")
-            .page.exampleLayout().openSearch()
-            .verify.visible(thisPage.selectors.search.searchInput, "searchInput should now be visible")
-        .end();
-    },
-    /*
-     * Checking if the slider correctly moves by checking slides visibility after
-     * calling the page object API.
-     */
-    "Slider correctly moves": function(client) {
-        client
-            .page.exampleLayout().visitPage()
-            .verify.hidden( thisPage.getSlideCss(3) )
-            .page.exampleLayout().moveToSlide(3)
-            .pause(1000)
-            .verify.visible( thisPage.getSlideCss(3) )
         .end();
     }
 };

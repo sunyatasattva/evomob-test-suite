@@ -8,6 +8,7 @@ var moduleExtend = require('extend');
 
 pageObject = function(client) {
     var selectors,
+        deferredSelectors,
         url,
         api,
         BaseLayout;
@@ -21,7 +22,7 @@ pageObject = function(client) {
      *                      single URL is accepted.
      * @since  2.0.0.
      */
-    url = "http://shop.wki.it"
+    url = "http://shop.wki.it";
     
     /*
      * @var  {object}  selectors  An object containing the selectors
@@ -50,6 +51,18 @@ pageObject = function(client) {
             slides:   ".slider ul li"
         }
     };
+    
+    /*
+     * @var  {object}  deferredSelectors  An object containing selectors of elements
+     *                                    which are not ready on page load.
+     *
+     * Useful, for example, when certain elements are present in the page after an
+     * AJAX call, or some sort of user interaction.
+     *
+     * @since 2.1.0
+     */
+    
+    deferredSelectors = {};
     
     /*
      * @var  {object}  api  The public API that gets exposed.
