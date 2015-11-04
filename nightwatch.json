@@ -3,7 +3,7 @@
     "output_folder":          "output",
     "custom_commands_path":   "commands",
     "custom_assertions_path": "assertions",
-    "globals_path":           "",
+    "globals_path":           "globals.js",
     "page_objects_path":      "layouts",
   
     "selenium": {
@@ -18,7 +18,7 @@
         }  
     },
   
-    "test_settings" : {
+    "test_settings": {
         "default": {
             "launch_url":      "http://localhost",
             "selenium_port":   4444,
@@ -51,6 +51,80 @@
                     "enabled": true,
                     "path":    "screenshots/"
                 }
+            },
+            "globals": {}
+        },
+        "saucelabs": {
+              "selenium_host": "ondemand.saucelabs.com",
+              "selenium_port": 80,
+              "username":      "${SAUCELABS_USER}",
+              "access_key":    "${SAUCELABS_ACCESS_TOKEN}",
+              "use_ssl":       false,
+              "silent":        true,
+              "output":        true,
+              "screenshots": {
+                "enabled": false,
+                "path":    ""
+              },
+              "desiredCapabilities": {
+                "browserName":       "iphone",
+                "platform":          "iOS",
+                "deviceName":        "iPhone Simulator",
+                "version":           "7.1",
+                "javascriptEnabled": true,
+                "acceptSslCerts":    true
+              },
+              "globals": { },
+              "selenium": {
+                "start_process" : false
+              }
+        },
+        "browserstack": {
+          "launch_url":    "http://hub.browserstack.com",
+          "selenium_port": 80,
+          "selenium_host": "hub.browserstack.com",
+          "silent":        false,
+          "screenshots": {
+            "enabled": false,
+            "path":    ""
+          },
+          "desiredCapabilities": {
+            "browserName": "chrome",
+            "chromeOptions": {
+                "args": [
+                    "--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A4449d Safari/9537.53",
+                    "--window-size=320,640"
+                ]
+            },
+            "platform":           "MAC",
+            "javascriptEnabled":  true,
+            "acceptSslCerts":     true,
+            "browserstack.user":  "${BROWSERSTACK_USER}",
+            "browserstack.key":   "${BROWSERSTACK_KEY}",
+            "browserstack.debug": true
+          }
+        },
+        "appium_local": {
+            "launch_url":    "http://0.0.0.0:4723/wd/hub",
+            "selenium_port": 4723,
+            "selenium_host": "localhost",
+            "silent":        true,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities": {
+                "browserName":              "Safari",
+                "platformName":             "iOS",
+                "deviceName":               "iPhone Simulator",
+                "version":                  "9.0",
+                "platformVersion":          "9.0",
+                "safari":                   true,
+                "javascriptEnabled":        true,
+                "acceptSslCerts":           true,
+                "safariAllowPopups":        true,
+                "unexpectedAlertBehaviour": "accept",
+                "skipReadyCheck":           true
             }
         }
     }

@@ -2,21 +2,7 @@
  * Layout name: exampleLayout
  */
 
-module.exports = {
-    /*
-     * This caches the page object in a variable for ease to access.
-     */
-    before: function(client){
-        thisPage = client.page.exampleLayout();
-        thisPage.visitPage();
-    },
-    /*
-     * This makes sure that the session is closed when all steps are done.
-     */
-    after: function(client){
-        client.end();  
-    },
-    
+var test = {
     /*
      * We test if the page gets correctly Remixed.
      *
@@ -100,3 +86,4 @@ module.exports = {
     }
 };
 
+module.exports = require('extend')(test, require('../lib/baseTest'));

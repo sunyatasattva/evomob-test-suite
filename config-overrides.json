@@ -1,0 +1,17 @@
+/*
+ * Configuration overrides. Please strip any comment before using it in production
+ */
+
+{
+    "project": {
+        /* Path to a JSON with project information. Expects `name` and `version` properties
+         * to be in the root. */
+        "infoPath": "../../package.json"
+        /* Project name and version can be specified here, in case a proper `package.json`
+           is not available, or there is some need to override those configurations */
+        // "name":     "{projectName}",
+        // "version":  "{projectVersion}"
+    },
+    /* Anything specified in this object will override default Nightwatch configuration */
+    "nightwatch": {}
+}
