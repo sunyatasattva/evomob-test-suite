@@ -1,3 +1,4 @@
+require('dotenv').load();
 
 var parse  = require('comment-json').parse || JSON.parse,
     fs     = require('fs'),
