@@ -6,7 +6,7 @@
 
 var moduleExtend = require('extend');
 
-pageObject = function(client) {
+var pageObject = function(client) {
     var selectors,
         deferredSelectors,
         url,
