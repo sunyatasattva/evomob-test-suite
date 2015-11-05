@@ -86,4 +86,4 @@ var test = {
     }
 };
 
-module.exports = require('extend')(test, require('../lib/baseTest'));
+module.exports = require('extend')({}, require('../lib/baseTest'), test);
